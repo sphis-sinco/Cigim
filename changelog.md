@@ -5,7 +5,7 @@ Uses:
 - Used to make the Lazuli Staff
 - When held and right-clicked: 
     - 5 XP levels will be taken
-    - You'll have Resistance 1 - 4 for 60 seconds depending on the core level unless you have Resistance
+    - You'll have Resistance 1 - 4 for 30 seconds depending on the core level unless you have Resistance
         - Depletes durability by 4 multiplied by the level
             - Level 1: 4 (64 uses max)
             - Level 2: 8 (32 uses max)
