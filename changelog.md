@@ -4,7 +4,7 @@
 Use:
     - Limited-use Lapis Lazuli Crafting Table with exclusive enchantments
         - GUI takes an item, a modifier, and returns an output
-            - When an output is taken the durability value decreases
+            - When an output is taken the durability value decreases unless the output is the same as the input (/ when there is no modifier)
 
 "Durability": 30
 Hardness: 60
