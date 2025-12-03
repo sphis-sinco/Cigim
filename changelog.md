@@ -1,7 +1,7 @@
 # 1.0 (12/3/2025)
 
 ## BLOCK : Lareli
-Uses:
+Use:
     - Limited-use Lapis Lazuli Crafting Table with exclusive enchantments
 
 Durability: 30
