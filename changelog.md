@@ -3,8 +3,14 @@
 ## BLOCK : Lareli
 Use:
     - Limited-use Lapis Lazuli Crafting Table with exclusive enchantments
+        - GUI takes an item, a modifier, and returns an output
 
-Durability: 30
+"Durability": 30
+Hardness: 60
+Blast Resistance: 1300
+
+Tool: Pickaxe
+Tool Tier: Iron
 
 Crafting Recipe:
 ![Recipe](/changelog/crafting_recipes/lareli.png)
