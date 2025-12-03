@@ -11,6 +11,7 @@ Uses:
             - Level 2: 8 (32 uses max / 16 minutes)
             - Level 3: 12 (21 uses max / 10.5 minutes)
             - Level 4: 16 (16 uses max / 8 minutes)
+        - Level 4 grants Regeneration level 2 for the same amount of time
 
 Durability: 256
 
