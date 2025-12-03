@@ -1,5 +1,10 @@
 # 1.0 (12/3/2025)
 
+## ZULI : Shaigla
+Use: Increases the range of swords, an enhanced Sharpness
+
+Tool: Sword
+
 ## BLOCK : Lareli
 Use:
     - Limited-use Lapis Lazuli Crafting Table with exclusive enchantments (Zuli's)
