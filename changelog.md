@@ -6,3 +6,4 @@
 Usage: Used instead of sticks for the Lazuli Family of crafting recipes
 
 Crafting Recipe:
+[Recipe](/changelog/crafting_recipes/stila.png)
