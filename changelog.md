@@ -9,7 +9,7 @@ Uses:
         - Depletes durability by 4 multiplied by the level
             - Level 1: 4 (64 uses max)
             - Level 2: 8 (32 uses max)
-            - Level 3: 12 (21.33 uses max)
+            - Level 3: 12 (21 uses max)
             - Level 4: 16 (16 uses max)
 
 Durability: 256
