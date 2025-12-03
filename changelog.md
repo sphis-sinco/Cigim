@@ -17,7 +17,7 @@ Crafting Recipe:
 ![Recipe](/changelog/crafting_recipes/lareli.png)
 
 ## ITEM : Lazuli Core
-Uses:
+Use:
 - When held and right-clicked: 
     - 5 XP levels will be taken
     - You'll have Resistance 1 - 4 for 30 seconds depending on the core level unless you have Resistance
