@@ -38,11 +38,11 @@ func _on_file_dialog_file_selected(path):
 	var texture = ImageTexture.new()
 	texture.set_image(image)
 	if button_dialog_for == 1:
-		$Button1.texture_normal = texture
+		$Input.texture_normal = texture
 	elif button_dialog_for == 2:
-		$Button2.texture_normal = texture
+		$Modifier.texture_normal = texture
 	elif button_dialog_for == 3:
-		$Button3.texture_normal = texture
+		$Output.texture_normal = texture
 
 func _on_button_1_pressed():
 	button_dialog_for = 1
@@ -76,9 +76,9 @@ func _on_block_dialog_file_selected(path):
 	$ShootButton.hide()
 	$MusicButton.hide()
 	$CraftingGrid.hide()
-	$Button1.hide()
-	$Button2.hide()
-	$Button3.hide()
+	$Input.hide()
+	$Modifier.hide()
+	$Output.hide()
 	$BlockButton.hide()
 	var ins = cube.instantiate()
 	var image = Image.new()
@@ -100,9 +100,9 @@ func _on_block_dialog_file_selected(path):
 	$ShootButton.show()
 	$MusicButton.show()
 	$CraftingGrid.show()
-	$Button1.show()
-	$Button2.show()
-	$Button3.show()
+	$Input.show()
+	$Modifier.show()
+	$Output.show()
 	$BlockButton.show()
 	ins.queue_free()
 
@@ -114,32 +114,32 @@ func _on_button_1_gui_input(event):
 	if event is InputEventMouseButton and event.pressed:
 		match event.button_index:
 			MOUSE_BUTTON_RIGHT:
-				$Button1.texture_normal = null
+				$Input.texture_normal = null
 			MOUSE_BUTTON_MIDDLE:
-				if $Button1.material != null:
-					$Button1.set_material(null)
+				if $Input.material != null:
+					$Input.set_material(null)
 				else:
-					$Button1.set_material(enchant)
+					$Input.set_material(enchant)
 func _on_button_2_gui_input(event):
 	if event is InputEventMouseButton and event.pressed:
 		match event.button_index:
 			MOUSE_BUTTON_RIGHT:
-				$Button2.texture_normal = null
+				$Modifier.texture_normal = null
 			MOUSE_BUTTON_MIDDLE:
-				if $Button2.material != null:
-					$Button2.set_material(null)
+				if $Modifier.material != null:
+					$Modifier.set_material(null)
 				else:
-					$Button2.set_material(enchant)
+					$Modifier.set_material(enchant)
 func _on_button_10_gui_input(event):
 	if event is InputEventMouseButton and event.pressed:
 		match event.button_index:
 			MOUSE_BUTTON_RIGHT:
-				$Button10.texture_normal = null
+				$Output.texture_normal = null
 			MOUSE_BUTTON_MIDDLE:
-				if $Button10.material != null:
-					$Button10.set_material(null)
+				if $Output.material != null:
+					$Output.set_material(null)
 				else:
-					$Button10.set_material(enchant)
+					$Output.set_material(enchant)
 
 
 
