@@ -3,7 +3,13 @@
 ## ZULI : Shaigla
 Use: Increases the range of swords, an enhanced Sharpness
 
-Tool: Sword
+Tools:
+- Wooden Sword
+- Stone Sword
+- Golden Sword
+- Iron Sword
+- Diamond Sword
+- Netherite Sword
 
 ## BLOCK : Lareli
 Use:
