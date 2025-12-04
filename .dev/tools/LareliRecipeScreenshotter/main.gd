@@ -24,7 +24,7 @@ func _ready():
 
 
 
-func _process(delta):
+func _process(_delta):
 	pass
 
 
@@ -83,7 +83,7 @@ func _on_block_dialog_file_selected(path):
 	var ins = cube.instantiate()
 	var image = Image.new()
 	image.load(blockImagePath)
-	image.resize(16, 16, 4)
+	image.resize(16, 16, 4 as Image.Interpolation)
 	var texture = ImageTexture.new()
 	texture.set_image(image)
 	for i in ins.get_children():
@@ -93,7 +93,7 @@ func _on_block_dialog_file_selected(path):
 	var region = Rect2(0, 0, 184, 144)
 	var viewport = get_viewport()
 	var img = viewport.get_texture().get_image().get_region(region)
-	img.resize_to_po2(true, 4)
+	img.resize_to_po2(true, 4 as Image.Interpolation)
 	img.save_png(path)
 	print("Image saved")
 	$LeaveButton.show()
