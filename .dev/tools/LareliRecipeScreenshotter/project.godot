@@ -22,8 +22,8 @@ config/icon="res://icon.png"
 
 [display]
 
-window/size/viewport_width=1024
-window/size/viewport_height=528
+window/size/viewport_width=704
+window/size/viewport_height=664
 window/size/resizable=false
 window/size/borderless=true
 window/size/transparent=true

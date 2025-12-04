@@ -1,13 +1,13 @@
 [gd_scene load_steps=12 format=3 uid="uid://dc8h4bv08j15b"]
 
-[ext_resource type="Script" path="res://main.gd" id="1"]
+[ext_resource type="Script" uid="uid://clq1ph07wm5h0" path="res://main.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://t7osl7fthyhv" path="res://CraftingGUI.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://r4e5hjfm3l8s" path="res://Xsymbol.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://dfmfbfquc5b65" path="res://block.png" id="4"]
 [ext_resource type="Texture2D" uid="uid://b1r7yai5l0vwy" path="res://ender_eye.png" id="5"]
 [ext_resource type="Texture2D" uid="uid://bq8j4s3py561p" path="res://music_disc_5.png" id="6"]
 [ext_resource type="AudioStream" uid="uid://csg5cnvdmxr35" path="res://mrstheme.mp3" id="7"]
-[ext_resource type="Script" path="res://TitleBar.gd" id="8"]
+[ext_resource type="Script" uid="uid://daxu7xldk4axj" path="res://TitleBar.gd" id="8"]
 
 [sub_resource type="Animation" id="Animation_4fs5i"]
 length = 0.001
@@ -66,138 +66,84 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_q6noi"]
 _data = {
-"RESET": SubResource("Animation_4fs5i"),
-"start": SubResource("Animation_ahlkd")
+&"RESET": SubResource("Animation_4fs5i"),
+&"start": SubResource("Animation_ahlkd")
 }
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1")
 
 [node name="CraftingGrid" type="Sprite2D" parent="."]
-position = Vector2(512, 264)
-scale = Vector2(4, 3.963)
+position = Vector2(352, 332)
+scale = Vector2(4, 4)
 texture = ExtResource("2")
-metadata/_edit_lock_ = true
 
-[node name="Button1" type="TextureButton" parent="."]
-offset_left = 60.0
-offset_top = 61.0
-offset_right = 180.0
-offset_bottom = 181.0
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 15.0
+offset_top = 292.0
+offset_right = 683.0
+offset_bottom = 647.0
+color = Color(0.7764706, 0.7764706, 0.7764706, 1)
+
+[node name="Input" type="TextureButton" parent="."]
+offset_left = 28.0
+offset_top = 168.0
+offset_right = 100.0
+offset_bottom = 240.0
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Button2" type="TextureButton" parent="."]
-offset_left = 204.0
-offset_top = 61.0
-offset_right = 324.0
-offset_bottom = 181.0
+[node name="Modifier" type="TextureButton" parent="."]
+offset_left = 244.0
+offset_top = 168.0
+offset_right = 316.0
+offset_bottom = 240.0
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Button3" type="TextureButton" parent="."]
-offset_left = 348.0
-offset_top = 61.0
-offset_right = 468.0
-offset_bottom = 181.0
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="Button4" type="TextureButton" parent="."]
-offset_left = 60.0
-offset_top = 204.0
-offset_right = 180.0
-offset_bottom = 324.0
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="Button5" type="TextureButton" parent="."]
-offset_left = 204.0
-offset_top = 204.0
-offset_right = 324.0
-offset_bottom = 324.0
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="Button6" type="TextureButton" parent="."]
-offset_left = 348.0
-offset_top = 204.0
-offset_right = 468.0
-offset_bottom = 324.0
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="Button7" type="TextureButton" parent="."]
-offset_left = 60.0
-offset_top = 346.0
-offset_right = 180.0
-offset_bottom = 466.0
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="Button8" type="TextureButton" parent="."]
-offset_left = 204.0
-offset_top = 346.0
-offset_right = 324.0
-offset_bottom = 466.0
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="Button9" type="TextureButton" parent="."]
-offset_left = 348.0
-offset_top = 346.0
-offset_right = 468.0
-offset_bottom = 466.0
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="Button10" type="TextureButton" parent="."]
-offset_left = 792.0
-offset_top = 185.0
-offset_right = 952.0
-offset_bottom = 345.0
+[node name="Output" type="TextureButton" parent="."]
+offset_left = 532.0
+offset_top = 168.0
+offset_right = 604.0
+offset_bottom = 240.0
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="LeaveButton" type="TextureButton" parent="."]
-offset_left = 876.0
-offset_top = 36.0
-offset_right = 976.0
-offset_bottom = 136.0
+offset_left = 575.0
+offset_top = 311.0
+offset_right = 675.0
+offset_bottom = 411.0
 texture_normal = ExtResource("3")
 ignore_texture_size = true
 stretch_mode = 5
-metadata/_edit_lock_ = true
 
 [node name="BlockButton" type="TextureButton" parent="."]
-offset_left = 876.0
-offset_top = 392.0
-offset_right = 976.0
-offset_bottom = 492.0
+offset_left = 576.0
+offset_top = 546.0
+offset_right = 676.0
+offset_bottom = 646.0
 texture_normal = ExtResource("4")
 ignore_texture_size = true
 stretch_mode = 5
-metadata/_edit_lock_ = true
 
 [node name="ShootButton" type="TextureButton" parent="."]
-offset_left = 768.0
-offset_top = 36.0
-offset_right = 868.0
-offset_bottom = 136.0
+offset_left = 22.0
+offset_top = 334.0
+offset_right = 122.0
+offset_bottom = 434.0
 texture_normal = ExtResource("5")
 ignore_texture_size = true
 stretch_mode = 5
-metadata/_edit_lock_ = true
 
 [node name="MusicButton" type="TextureButton" parent="."]
-offset_left = 768.0
-offset_top = 388.0
-offset_right = 868.0
-offset_bottom = 488.0
+offset_left = 31.0
+offset_top = 553.0
+offset_right = 131.0
+offset_bottom = 653.0
 texture_normal = ExtResource("6")
 ignore_texture_size = true
 stretch_mode = 5
-metadata/_edit_lock_ = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(768, 385)
@@ -205,13 +151,14 @@ stream = ExtResource("7")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AudioStreamPlayer2D"]
 libraries = {
-"": SubResource("AnimationLibrary_q6noi")
+&"": SubResource("AnimationLibrary_q6noi")
 }
 
 [node name="FileDialog" type="FileDialog" parent="."]
+oversampling_override = 1.0
 title = "Open a File"
 initial_position = 1
-size = Vector2i(391, 400)
+size = Vector2i(496, 400)
 ok_button_text = "Open"
 file_mode = 0
 access = 2
@@ -219,25 +166,28 @@ filters = PackedStringArray("*.png", "*.webp", "*.jpg", "*.tiff", "*.jpeg", "*.b
 use_native_dialog = true
 
 [node name="SaveDialog" type="FileDialog" parent="."]
+oversampling_override = 1.0
 initial_position = 1
-size = Vector2i(452, 400)
+size = Vector2i(496, 400)
 ok_button_text = "Save"
 access = 2
 filters = PackedStringArray("*.png")
 use_native_dialog = true
 
 [node name="BlockDialog" type="FileDialog" parent="."]
+oversampling_override = 1.0
 initial_position = 1
-size = Vector2i(452, 400)
+size = Vector2i(496, 400)
 ok_button_text = "Save"
 access = 2
 filters = PackedStringArray("*.png")
 use_native_dialog = true
 
 [node name="BlockImageDialog" type="FileDialog" parent="."]
+oversampling_override = 1.0
 title = "Open a File"
 initial_position = 1
-size = Vector2i(452, 400)
+size = Vector2i(496, 400)
 ok_button_text = "Open"
 file_mode = 0
 access = 2
@@ -254,26 +204,35 @@ offset_bottom = 32.0
 script = ExtResource("8")
 metadata/_edit_lock_ = true
 
-[connection signal="gui_input" from="Button1" to="." method="_on_button_1_gui_input"]
-[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
-[connection signal="gui_input" from="Button2" to="." method="_on_button_2_gui_input"]
-[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
-[connection signal="gui_input" from="Button3" to="." method="_on_button_3_gui_input"]
-[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
-[connection signal="gui_input" from="Button4" to="." method="_on_button_4_gui_input"]
-[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
-[connection signal="gui_input" from="Button5" to="." method="_on_button_5_gui_input"]
-[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
-[connection signal="gui_input" from="Button6" to="." method="_on_button_6_gui_input"]
-[connection signal="pressed" from="Button6" to="." method="_on_button_6_pressed"]
-[connection signal="gui_input" from="Button7" to="." method="_on_button_7_gui_input"]
-[connection signal="pressed" from="Button7" to="." method="_on_button_7_pressed"]
-[connection signal="gui_input" from="Button8" to="." method="_on_button_8_gui_input"]
-[connection signal="pressed" from="Button8" to="." method="_on_button_8_pressed"]
-[connection signal="gui_input" from="Button9" to="." method="_on_button_9_gui_input"]
-[connection signal="pressed" from="Button9" to="." method="_on_button_9_pressed"]
-[connection signal="gui_input" from="Button10" to="." method="_on_button_10_gui_input"]
-[connection signal="pressed" from="Button10" to="." method="_on_button_10_pressed"]
+[node name="Label" type="Label" parent="."]
+offset_left = 28.0
+offset_top = 130.0
+offset_right = 77.0
+offset_bottom = 153.0
+text = "INPUT"
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 217.0
+offset_top = -7.0
+offset_right = 266.0
+offset_bottom = 16.0
+text = "MODIFIER"
+
+[node name="Label" type="Label" parent="Label/Label"]
+layout_mode = 0
+offset_left = 287.0
+offset_top = -5.0
+offset_right = 364.0
+offset_bottom = 18.0
+text = "OUTPUT"
+
+[connection signal="gui_input" from="Input" to="." method="_on_button_1_gui_input"]
+[connection signal="pressed" from="Input" to="." method="_on_button_1_pressed"]
+[connection signal="gui_input" from="Modifier" to="." method="_on_button_2_gui_input"]
+[connection signal="pressed" from="Modifier" to="." method="_on_button_2_pressed"]
+[connection signal="gui_input" from="Output" to="." method="_on_button_10_gui_input"]
+[connection signal="pressed" from="Output" to="." method="_on_button_10_pressed"]
 [connection signal="pressed" from="LeaveButton" to="." method="_on_leave_button_pressed"]
 [connection signal="pressed" from="BlockButton" to="." method="_on_block_button_pressed"]
 [connection signal="pressed" from="ShootButton" to="." method="_on_shoot_button_pressed"]
