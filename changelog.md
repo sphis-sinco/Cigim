@@ -1,7 +1,7 @@
 # 1.0 (12/3/2025)
 
 ## ZULI : Shaigla
-Use: Increases the range of swords, an enhanced Sharpness
+Use: Increases the range of swords, an enhanced Sharpness at the cost of durability
 
 Tools:
 - Wooden Sword
