@@ -4,8 +4,15 @@
 Use:
 - Enhances Wooden Tools to be on par with diamond at the cost of durability and it damages you
 
-Lareli inputs:
-- Wooden Sword
+Info:
+- Lareli inputs:
+    - Wooden Sword
+
+- Lareli outputs:
+    - Slinted Wooden Sword ![Image](/items/zulis/slint/slinted_wooden_sword.png)
+        - Attack Damage: 7
+        - Attack Speed: 1
+        - Durability: 15
 
 Crafting Recipe:
 ![Recipe](/changelog/crafting_recipes/slint.png)
@@ -16,12 +23,14 @@ Use:
     - GUI takes an item, a modifier, and returns an output
         - When an output is taken the durability value decreases unless the output is the same as the input (/ when there is no modifier)
 
-"Durability": 30
-Hardness: 60
-Blast Resistance: 1300
+Info:
+- "Durability": 30
 
-Tool: Pickaxe
-Tool Tier: Iron
+- Hardness: 60
+- Blast Resistance: 1300
+
+- Tool: Pickaxe
+- Tool Tier: Iron
 
 Crafting Recipe:
 ![Recipe](/changelog/crafting_recipes/lareli.png)
@@ -39,7 +48,8 @@ Use:
         - Level 4 grants Regeneration level 2 for the same amount of time
         - Effect only reapplied when the item is held in the main hand
 
-Durability: 256
+Info:
+- Durability: 256
 
 Crafting Recipe:
 ![Recipe](/changelog/crafting_recipes/lazuli-core.png)
