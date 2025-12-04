@@ -5,14 +5,16 @@ Use:
 - Enhances Wooden Tools to be on par with diamond at the cost of durability and it damages you
 
 Info:
-- Lareli inputs:
+- Lareli Inputs:
     - Wooden Sword
 
-- Lareli outputs:
+- Lareli Outputs:
     - Slinted Wooden Sword ![Image](/items/zulis/slint/slinted_wooden_sword.png)
         - Attack Damage: 7
         - Attack Speed: 1
         - Durability: 15
+
+- Lareli XP Level Requirement: 1
 
 Crafting Recipe:
 ![Recipe](/changelog/crafting_recipes/slint.png)
