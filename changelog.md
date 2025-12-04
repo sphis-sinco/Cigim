@@ -1,10 +1,20 @@
 # 1.0 (12/3/2025)
 
+## ZULI : Slint
+Use:
+- Enhances Wooden Tools to be on par with diamond at the cost of durability and it damages you
+
+Lareli inputs:
+- Wooden Sword
+
+Crafting Recipe:
+![Recipe](/changelog/crafting_recipes/slint.png)
+
 ## BLOCK : Lareli
 Use:
-    - Limited-use Lapis Lazuli Crafting Table with exclusive enchantments (Zuli's)
-        - GUI takes an item, a modifier, and returns an output
-            - When an output is taken the durability value decreases unless the output is the same as the input (/ when there is no modifier)
+- Limited-use Lapis Lazuli Crafting Table with exclusive enchantments (Zuli's)
+    - GUI takes an item, a modifier, and returns an output
+        - When an output is taken the durability value decreases unless the output is the same as the input (/ when there is no modifier)
 
 "Durability": 30
 Hardness: 60
@@ -35,7 +45,8 @@ Crafting Recipe:
 ![Recipe](/changelog/crafting_recipes/lazuli-core.png)
 
 ## ITEM : Stila
-Use: Stick replacement for the Lazuli Family of crafting recipes
+Use:
+- Stick replacement for the Lazuli Family of crafting recipes
 
 Crafting Recipe:
 ![Recipe](/changelog/crafting_recipes/stila.png)
