@@ -13,8 +13,7 @@ Info:
         - Attack Damage: 7
         - Attack Speed: 1
         - Durability: 15
-
-- Lareli XP Level Requirement: 1
+        - XP Level Requirement: 1
 
 Crafting Recipe:
 ![Recipe](/changelog/crafting_recipes/slint.png)
